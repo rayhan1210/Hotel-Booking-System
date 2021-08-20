@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane fx:id="bp" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.updateUser">
+   <center>
+      <Pane fx:id="paneUpdate" prefHeight="408.0" prefWidth="843.0">
+          <!--            prefHeight="400.0" prefWidth="600.0">-->
+          <children>
+              <TableView fx:id="userTable" layoutX="-1.0" prefHeight="415.0" prefWidth="843.0">
+                  <columns>
+                      <TableColumn fx:id="IDA" prefWidth="39.33331298828125" text="ID" />
+                      <TableColumn fx:id="nameID" prefWidth="96.0" text="First Name" />
+                      <TableColumn fx:id="surnameID" prefWidth="69.99996948242188" text="Last Name" />
+                      <TableColumn fx:id="userID" prefWidth="85.66668701171875" text="Username" />
+                      <TableColumn fx:id="PW" prefWidth="88.33331298828125" text="Password" />
+                      <TableColumn fx:id="Role" prefWidth="67.0" text="Role" />
+                      <TableColumn fx:id="SecretQs" minWidth="0.0" prefWidth="117.0" text="Secret QS" />
+                      <TableColumn fx:id="SecretAns" prefWidth="81.66668701171875" text="Secret Ans" />
+                  <TableColumn fx:id="WhiteList" prefWidth="73.33331298828125" text="Whitelist" />
+                      <TableColumn fx:id="update" prefWidth="63.3333740234375" text="Update" />
+                  <TableColumn fx:id="delete" prefWidth="55.66668701171875" text="Delete" />
+                  </columns>
+              </TableView>
+          </children>
+      </Pane>
+   </center>
+</BorderPane>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="157.0" prefWidth="372.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.ForgottenPassController">
+    <children>
+        <Button layoutX="258.0" layoutY="65.0" mnemonicParsing="false" onMouseClicked="#SendData" text="Submit" />
+        <TextField fx:id="userName" layoutX="97.0" layoutY="65.0" />
+        <Label layoutX="31.0" layoutY="69.0" text="Username:" />
+        <Label fx:id="isConnectedRes" layoutX="30.0" layoutY="127.0" text="Status" />
+      <Button fx:id="Login" layoutX="316.0" layoutY="65.0" mnemonicParsing="false" onAction="#Login" text="Login" />
+    </children>
+</AnchorPane>

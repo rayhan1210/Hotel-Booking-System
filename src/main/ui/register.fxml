@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="338.0" prefWidth="391.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.RegisterController">
+   <children>
+      <Label layoutX="36.0" layoutY="37.0" text="First Name: ">
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </Label>
+      <Label layoutX="35.0" layoutY="74.0" text="Last Name: ">
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </Label>
+      <Label layoutX="36.0" layoutY="107.0" text="Role: ">
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </Label>
+      <Label layoutX="36.0" layoutY="142.0" text="Username: ">
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </Label>
+      <Label layoutX="38.0" layoutY="176.0" text="Password: ">
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </Label>
+      <Label layoutX="36.0" layoutY="211.0" text="Secret Question">
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </Label>
+      <Label layoutX="36.0" layoutY="244.0" text="Answer: ">
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </Label>
+      <TextField fx:id="name" layoutX="137.0" layoutY="33.0" prefHeight="25.0" prefWidth="200.0" />
+      <TextField fx:id="surname" layoutX="137.0" layoutY="70.0" prefHeight="25.0" prefWidth="200.0" />
+      <TextField fx:id="role" layoutX="137.0" layoutY="103.0" prefHeight="25.0" prefWidth="200.0" />
+      <TextField fx:id="user" layoutX="137.0" layoutY="138.0" prefHeight="25.0" prefWidth="200.0" />
+      <PasswordField fx:id="pw" layoutX="137.0" layoutY="172.0" prefWidth="200.0" />
+      <TextField fx:id="SA" layoutX="137.0" layoutY="240.0" prefHeight="25.0" prefWidth="200.0" />
+      <Button layoutX="277.0" layoutY="286.0" mnemonicParsing="false" onAction="#Register" text="Register">
+         <effect>
+            <Lighting diffuseConstant="1.25" specularConstant="0.59" specularExponent="24.03" surfaceScale="3.67">
+               <bumpInput>
+                  <Glow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#05bef0" />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Label fx:id="isConnectedReg" layoutX="35.0" layoutY="290.0" text="Status" />
+      <ComboBox fx:id="SQ" layoutX="137.0" layoutY="207.0" prefHeight="25.0" prefWidth="200.0" />
+      <Button layoutX="219.0" layoutY="286.0" mnemonicParsing="false" onAction="#Login" style="-fx-background-color: #0199ff;" text="Login" />
+   </children>
+</AnchorPane>

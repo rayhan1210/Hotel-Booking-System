@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.EmpManageBookController">
+   <children>
+      <TableView fx:id="userTable" prefHeight="302.0" prefWidth="500.0">
+        <columns>
+          <TableColumn fx:id="userID" prefWidth="75.0" text="Username" />
+            <TableColumn fx:id="tableID" prefWidth="105.0" text="TablePosition" />
+            <TableColumn fx:id="status" minWidth="0.0" prefWidth="74.33331298828125" text="Status" />
+            <TableColumn fx:id="cancel" minWidth="0.0" prefWidth="85.66668701171875" text="Cancel" />
+            <TableColumn fx:id="checkin" minWidth="0.0" prefWidth="94.33331298828125" text="CheckIn" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>
