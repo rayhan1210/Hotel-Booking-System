@@ -50,17 +50,16 @@ Password: employee
 
 ## Prepare other content
 
-Assignemnt 2: Hotdesking System using MVC, Java
+Project: Hotdesking System using MVC, Java
 
-This assignment is a booking table system application where the users are employee and admin and each user can book a table
+This project is about a booking table system application where the users are employee and admin and each user can book a table
 only once untill their current or previous booking has been accepted and checked in or cancelled b that user. The admin of the system
 is allowed to perform higher task compared to the employee. admin can cancel or reject a booking and when admin books a table their table gets automatically accepted
 as they are admin and has more privillege. As an admin you can also add,update,delete other admin or user. You can also generate 
 a report for booking which shows previoous and current booking as well who checkedin and who didnt, and employee report shows all employee 
 informatin such as their username, id, name, lastname.
 
-other things you could add:
-
+	
 - Table of content
 	- Login 
 	- Register 
